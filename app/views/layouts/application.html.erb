@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Flurty</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <body>
-    <header class="row">
+<head>
+  <title>Flurty</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <header class="row">
     <div class="col-3">
-      LOGO
+      <div class="circle">
+        <br />
+        Random
+        <br />
+        Startup
+        <br />
+        Ideas
       </div>
-    <div class="col-4">
-      Splurting out crazy startup ideas since 2017
     </div>
-    <div class="col-5">
+    <div class="col-4 slogan">
+      Splurting out random startup ideas since 2017
+    </div>
+    <div class="col-5 links">
       <%= link_to 'Contribute', '#' %>
       <%= link_to 'About', '#' %>
     </div>
   </header>
 
+  <hr />
+
   <br class="clear" />
 
-    <%= yield %>
-    
-  </body>
+<%= yield %>
+
+</body>
 </html>
